@@ -1,12 +1,11 @@
 /* ---- Global ---- */
+/* Global layout correction */
 body {
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f4f4f4;
     margin: 0;
+    padding-top: 70px;
+    /* espace pour la navbar */
 }
 
 /* ---- Navbar ---- */

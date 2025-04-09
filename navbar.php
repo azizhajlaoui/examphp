@@ -4,7 +4,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+
     <div class="container-fluid">
         <a class="navbar-brand" href="dashboard.php">Coworking</a>
 
