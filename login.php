@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <?php include 'navbar.php'; ?>
 
     <div class="container mt-5">
         <h2 class="text-center">Connexion</h2>
+        <?php if (isset($_SESSION['success_message'])): ?>
+            <div class="alert alert-success text-center">
+                <?= $_SESSION['success_message'] ?>
+                <?php unset($_SESSION['success_message']); ?>
+            </div>
+        <?php endif; ?>
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <form action="login_process.php" method="POST">
@@ -24,6 +31,9 @@
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Se connecter</button>
                 </form>
+                <div class="text-center mt-3">
+                    <a href="forgot_password.php" class="text-decoration-none">Mot de passe oublié ?</a>
+                </div>
             </div>
         </div>
     </div>

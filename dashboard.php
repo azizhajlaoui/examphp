@@ -21,9 +21,18 @@ if (!isset($_SESSION['user_id'])) {
 
     <div class="container mt-5 text-center">
         <h2>Bienvenue, <?= htmlspecialchars($_SESSION['user_name']) ?> !</h2>
-        <a href="calendar.php" class="btn btn-outline-info mt-2">Voir le calendrier</a>
-        <a href="historique.php" class="btn btn-outline-secondary mt-2">Historique</a>
-        <p class="mt-3">Vous êtes connecté avec succès à votre espace personnel.</p>
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <div class="d-grid gap-3">
+                    <a href="index.php" class="btn btn-primary btn-lg">Réserver un espace</a>
+                    <a href="calendar.php" class="btn btn-outline-info">Voir le calendrier</a>
+                    <a href="historique.php" class="btn btn-outline-secondary">Historique</a>
+                </div>
+            </div>
+        </div>
+        
+        <p class="mt-4">Vous êtes connecté avec succès à votre espace personnel.</p>
         <a href="logout.php" class="btn btn-danger mt-3">Se déconnecter</a>
     </div>
 
